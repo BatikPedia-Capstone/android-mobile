@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        binding.fabDetect.setOnClickListener {
+        binding.cardView3.setOnClickListener {
             //intent to detection activity
             val intent = Intent(this, DetectionActivity::class.java)
             startActivity(intent)

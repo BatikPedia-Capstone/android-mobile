@@ -8,4 +8,8 @@
     <string name="empty_image_warning">\ngambar tidak boleh kosong</string>
     <string name="accuracy">Keakuratan : %s</string>
     <string name="menu_main_label">Menu</string>
+    <string name="data_batik">Data Batik</string>
+    <string name="article_batik">Artikel</string>
+    <string name="detectio_batik">Deteksi Batik</string>
+    <string name="guide_book">Buku Petunjuk</string>
 </resources>

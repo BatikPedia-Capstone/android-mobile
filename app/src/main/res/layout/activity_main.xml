@@ -33,8 +33,8 @@
         android:id="@+id/menu_main_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/menu_main_label"
         android:layout_margin="16dp"
+        android:text="@string/menu_main_label"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/view_pager"
@@ -46,13 +46,31 @@
         android:id="@+id/card_view_1"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:cardBackgroundColor="@color/md_theme_light_primary"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toStartOf="@+id/card_view_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu_main_label">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_batik" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center"
+            android:text="@string/data_batik"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="16sp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -61,13 +79,29 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_margin="16dp"
-        app:cardBackgroundColor="@color/cardview_dark_background"
+        app:cardBackgroundColor="@color/md_theme_light_primary"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/card_view_1"
         app:layout_constraintTop_toBottomOf="@+id/menu_main_label">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_news" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center"
+            android:text="@string/article_batik"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="16sp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -76,14 +110,34 @@
         android:id="@+id/card_view_3"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_margin="16dp"
-        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/md_theme_light_primary"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/card_view_4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_view_1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_detection"
+            android:alpha="0.72"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center"
+            android:text="@string/detectio_batik"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="16sp" />
 
 
     </androidx.cardview.widget.CardView>
@@ -100,23 +154,27 @@
         app:layout_constraintStart_toEndOf="@+id/card_view_3"
         app:layout_constraintTop_toBottomOf="@+id/card_view_2">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_guideline"
+            android:alpha="0.72"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|center"
+            android:text="@string/guide_book"
+            android:textColor="@color/md_theme_light_onPrimary"
+            android:textSize="16sp" />
 
     </androidx.cardview.widget.CardView>
 
-
-
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_detect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/ic_detection_camera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
