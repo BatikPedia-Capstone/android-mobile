@@ -12,31 +12,19 @@ import com.google.android.material.tabs.TabLayout
 import java.util.TimerTask
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
-    private lateinit var viewPager :ViewPager
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var viewPager: ViewPager
     private lateinit var imageList: List<String>
-    private lateinit var tabLayout:TabLayout
+    private lateinit var tabLayout: TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        binding= ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
 
-        viewPager=binding.viewPager
-        tabLayout=binding.tabs
-
-        tabLayout.setupWithViewPager(viewPager)
-
-        imageList= listOf(
-            "https://cdn-2.tstatic.net/jogja/foto/bank/images/batik.jpg",
-            "https://cdn-2.tstatic.net/jogja/foto/bank/images/batik.jpg",
-            "https://cdn-2.tstatic.net/jogja/foto/bank/images/batik.jpg",
-            "https://cdn-2.tstatic.net/jogja/foto/bank/images/batik.jpg",
-        )
-
-        viewPager.adapter=CarouselAdapter(this,imageList)
-
+        setCarouselView()
         autoImageSlide()
 
 
@@ -47,6 +35,23 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun setCarouselView() {
+        viewPager = binding.viewPager
+        tabLayout = binding.tabs
+
+        tabLayout.setupWithViewPager(viewPager)
+
+        imageList = listOf(
+            "https://imgpile.com/images/Gyb7EP.jpg",
+            "https://imgpile.com/images/GybuVW.jpg",
+            "https://imgpile.com/images/GybUT1.png",
+            "https://imgpile.com/images/Gyb5Fx.jpg",
+            "https://imgpile.com/images/GybTuj.jpg",
+        )
+
+        viewPager.adapter = CarouselAdapter(this, imageList)
     }
 
     private fun autoImageSlide() {
