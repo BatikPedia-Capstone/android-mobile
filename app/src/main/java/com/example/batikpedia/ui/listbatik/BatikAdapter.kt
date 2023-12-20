@@ -27,14 +27,14 @@ class BatikAdapter : ListAdapter<BatikResponseItem, BatikAdapter.BatikViewHolder
 
     class BatikViewHolder(private val binding:ItemBatikBinding):RecyclerView.ViewHolder(binding.root) {
         fun bind(batik: BatikResponseItem){
-            binding.tvItemTitle.text=batik.nama
-            binding.tvItemAsal.text=batik.asal
+            binding.tvItemTitle.text=batik.namaBatik
+            binding.tvItemAsal.text=batik.asalBatik
             Glide.with(itemView.context)
                 .load(batik.urlGambar)
                 .into(binding.imgBatik)
 
             itemView.setOnClickListener {
-                Toast.makeText(itemView.context,"Kamu memilih ${batik.nama}",Toast.LENGTH_SHORT).show()
+                Toast.makeText(itemView.context,"Kamu memilih ${batik.namaBatik}",Toast.LENGTH_SHORT).show()
             }
         }
 

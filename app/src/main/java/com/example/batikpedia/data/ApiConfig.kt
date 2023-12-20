@@ -30,7 +30,7 @@ object ApiConfig {
             .addInterceptor(loggingInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://65780768197926adf62f52d7.mockapi.io/")
+            .baseUrl("https://batikpedia-sql-service-wvu4btzfga-et.a.run.app/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

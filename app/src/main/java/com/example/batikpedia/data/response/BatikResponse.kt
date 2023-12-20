@@ -4,24 +4,24 @@ import com.google.gson.annotations.SerializedName
 
 data class BatikResponse(
 
-	@field:SerializedName("BatikResponse")
-	val batikResponse: List<BatikResponseItem>
+    @field:SerializedName("BatikResponse")
+    val batikResponse: List<BatikResponseItem>
 )
 
 data class BatikResponseItem(
 
-	@field:SerializedName("asal")
-	val asal: String,
+    @field:SerializedName("asal_batik")
+    val asalBatik: String,
 
-	@field:SerializedName("nama")
-	val nama: String,
+    @field:SerializedName("url_gambar")
+    val urlGambar: String,
 
-	@field:SerializedName("url_gambar")
-	val urlGambar: String,
+    @field:SerializedName("nama_batik")
+    val namaBatik: String,
 
-	@field:SerializedName("sejarah")
-	val sejarah: String,
+    @field:SerializedName("makna_batik")
+    val maknaBatik: String,
 
-	@field:SerializedName("id")
-	val id: String
+    @field:SerializedName("id_batik")
+    val idBatik: Int
 )
