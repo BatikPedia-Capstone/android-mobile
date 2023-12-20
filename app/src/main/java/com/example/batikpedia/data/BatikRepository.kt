@@ -41,6 +41,19 @@ class BatikRepository(private val apiService:ApiService, private val batikServic
     }
 
 
+    fun getArticleList() = liveData {
+        emit(ResultState.Loading)
+        try {
+            val successResponse = batikService.getArticle()
+            emit(ResultState.Success(successResponse))
+        } catch (e: HttpException) {
+            val errorBody = e.response()?.errorBody()?.string()
+            emit(ResultState.Error(errorBody.toString()) )
+        }
+
+    }
+
+
     companion object {
         @Volatile
         private var instance: BatikRepository? = null

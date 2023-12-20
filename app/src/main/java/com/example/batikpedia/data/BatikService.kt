@@ -1,5 +1,6 @@
 package com.example.batikpedia.data
 
+import com.example.batikpedia.data.response.ArticleResponseItem
 import com.example.batikpedia.data.response.BatikResponse
 import com.example.batikpedia.data.response.BatikResponseItem
 import retrofit2.Callback
@@ -10,6 +11,9 @@ interface BatikService {
 
     @GET("batik")
     suspend fun getBatik(): List<BatikResponseItem>
+
+    @GET("articles")
+    suspend fun getArticle(): List<ArticleResponseItem>
 
 
 }

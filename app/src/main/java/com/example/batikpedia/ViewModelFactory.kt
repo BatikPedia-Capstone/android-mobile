@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.batikpedia.data.BatikRepository
 import com.example.batikpedia.di.Injection
 import com.example.batikpedia.ui.detection.DetectionViewModel
+import com.example.batikpedia.ui.listarticle.ListArticleViewModel
 import com.example.batikpedia.ui.listbatik.ListBatikViewModel
 
 class ViewModelFactory(private val repository: BatikRepository) :
@@ -18,6 +19,9 @@ class ViewModelFactory(private val repository: BatikRepository) :
             }
             modelClass.isAssignableFrom(ListBatikViewModel::class.java) -> {
                 ListBatikViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(ListArticleViewModel::class.java) -> {
+                ListArticleViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

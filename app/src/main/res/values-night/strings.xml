@@ -13,4 +13,6 @@
     <string name="detectio_batik">Deteksi Batik</string>
     <string name="asal">Asal</string>
     <string name="batik_title_label">Nama Batik</string>
+    <string name="artikel_title">Judul Artikel</string>
+    <string name="content">isi</string>
 </resources>
