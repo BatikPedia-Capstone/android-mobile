@@ -21,6 +21,7 @@ class ListBatikActivity : AppCompatActivity() {
         binding = ActivityListBatikBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
+        supportActionBar?.hide()
 
         val adapter = BatikAdapter()
 

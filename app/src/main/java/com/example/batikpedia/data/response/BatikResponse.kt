@@ -1,6 +1,8 @@
 package com.example.batikpedia.data.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class BatikResponse(
 
@@ -8,6 +10,7 @@ data class BatikResponse(
     val batikResponse: List<BatikResponseItem>
 )
 
+@Parcelize
 data class BatikResponseItem(
 
     @field:SerializedName("asal_batik")
@@ -24,4 +27,4 @@ data class BatikResponseItem(
 
     @field:SerializedName("id_batik")
     val idBatik: Int
-)
+) : Parcelable

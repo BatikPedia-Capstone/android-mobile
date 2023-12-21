@@ -1,5 +1,6 @@
 package com.example.batikpedia.ui.listbatik
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.batikpedia.data.response.BatikResponseItem
 import com.example.batikpedia.databinding.ItemBatikBinding
+import com.example.batikpedia.ui.detailbatik.DetailBatikActivity
 
 class BatikAdapter : ListAdapter<BatikResponseItem, BatikAdapter.BatikViewHolder>(DIFF_CALLBACK) {
 
@@ -34,7 +36,9 @@ class BatikAdapter : ListAdapter<BatikResponseItem, BatikAdapter.BatikViewHolder
                 .into(binding.imgBatik)
 
             itemView.setOnClickListener {
-                Toast.makeText(itemView.context,"Kamu memilih ${batik.namaBatik}",Toast.LENGTH_SHORT).show()
+                val intent=Intent(itemView.context, DetailBatikActivity::class.java)
+                intent.putExtra(DetailBatikActivity.EXTRA_DATA,batik)
+                itemView.context.startActivity(intent)
             }
         }
 

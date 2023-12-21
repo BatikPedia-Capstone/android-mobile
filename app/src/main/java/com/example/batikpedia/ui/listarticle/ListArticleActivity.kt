@@ -20,12 +20,7 @@ class ListArticleActivity : AppCompatActivity() {
         binding = ActivityListArticleBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
-
-
-
-
-        supportActionBar?.setTitle("List Article")
-
+        supportActionBar?.hide()
 
         viewModel.getArticle().observe(this) { result ->
             if (result != null) {

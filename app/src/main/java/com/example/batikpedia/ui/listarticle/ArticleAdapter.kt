@@ -1,5 +1,6 @@
 package com.example.batikpedia.ui.listarticle
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -10,6 +11,7 @@ import com.example.batikpedia.data.response.ArticleResponseItem
 import com.example.batikpedia.data.response.BatikResponseItem
 import com.example.batikpedia.databinding.ItemArticleBinding
 import com.example.batikpedia.databinding.ItemBatikBinding
+import com.example.batikpedia.ui.detailarticle.DetailArticleActivity
 import com.example.batikpedia.ui.listarticle.ArticleAdapter.ArticleViewHolder.Companion.DIFF_CALLBACK
 import com.example.batikpedia.ui.listbatik.BatikAdapter
 
@@ -32,6 +34,11 @@ class ArticleAdapter:ListAdapter<ArticleResponseItem, ArticleAdapter.ArticleView
             binding.tvItemTitle.text = article.judul
             binding.tvItemIsiArtikel.text = article.namaBatik
 
+            itemView.setOnClickListener {
+                val intent= Intent(itemView.context, DetailArticleActivity::class.java)
+                intent.putExtra(DetailArticleActivity.EXTRA_ARTICLE,article)
+                itemView.context.startActivity(intent)
+            }
         }
 
         companion object {
