@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BatikPedia</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="detection">Deteksi</string>
+    <string name="deskripsi">Hasil deteksi :</string>
+    <string name="result">-------------</string>
+    <string name="empty_image_warning">\ngambar tidak boleh kosong</string>
+    <string name="accuracy">Keakuratan : %s</string>
+    <string name="menu_main_label">Menu</string>
+    <string name="data_batik">Data Batik</string>
+    <string name="article_batik">Artikel</string>
+    <string name="detectio_batik">Deteksi Batik</string>
+    <string name="info_app">Informasi App</string>
+    <string name="asal">Asal</string>
+    <string name="batik_title_label">Nama Batik</string>
+    <string name="artikel_title">Judul Artikel</string>
+    <string name="content">isi</string>
+    <string name="batik_makna">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="batik_asal_label">Asal Batik</string>
+    <string name="batik_makna_label">Makna Batik</string>
+    <string name="article_title_label">Judul Article</string>
+    <string name="more_detail">Lihat Berita</string>
+    <string name="batik_list">List Batik</string>
+    <string name="article_list">List Artikel</string>
+    <string name="detail_desc">Sejarah Batik</string>
+    <string name="more_detail_batik">Lihat Detail Batik</string>
+</resources>
