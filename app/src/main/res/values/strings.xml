@@ -6,7 +6,7 @@
     <string name="deskripsi">Hasil deteksi :</string>
     <string name="result">-------------</string>
     <string name="empty_image_warning">\ngambar tidak boleh kosong</string>
-    <string name="accuracy">Keakuratan : %s</string>
+    <string name="accuracy">Akurasi : %s</string>
     <string name="menu_main_label">Menu</string>
     <string name="data_batik">Data Batik</string>
     <string name="article_batik">Artikel</string>
@@ -25,4 +25,64 @@
     <string name="article_list">List Artikel</string>
     <string name="detail_desc">Sejarah Batik</string>
     <string name="more_detail_batik">Lihat Detail Batik</string>
+    <string name="info_team_name">Nama Tim</string>
+    <string name="team_name">BatikPedia</string>
+    <string name="info_team_id">Team ID</string>
+    <string name="team_id">CH2-PS533</string>
+    <string name="info_project_theme">Tema Proyek</string>
+    <string name="project_theme">Education, Learning, and Personal Development\n</string>
+    <string name="team_member_label">Member Tim</string>
+    <string name="document">Dokumen</string>
+    <string name="project_plan">Project Plan</string>
+    <string name="our_github">Github</string>
+    <string name="figma">Figma</string>
+    <string name="google_colab">Google Colab</string>
+    <string name="nama_member">Nama member</string>
+    <string name="role_member">Machine Learning Path</string>
+
+
+
+
+
+    <string-array name="data_name">
+        <item>Reggi Fachri</item>
+        <item>Rony Tan Enwan</item>
+        <item>Muhammad Ramadhan</item>
+        <item>Falidazia Hasanah Faizana</item>
+        <item>Mudita Nigayanti</item>
+        <item>Girda Hanum Alkhanza</item>
+    </string-array>
+
+    <string-array name="data_role">
+        <item>Cloud Computing</item>
+        <item>Cloud Computing</item>
+        <item>Mobile Development</item>
+        <item>Machine Learning</item>
+        <item>Machine Learning</item>
+        <item>Machine Learning</item>
+    </string-array>
+
+    <!--    <integer-array name="data_photo">-->
+    <!--        <item>@drawable/ahmad_dahlan</item>-->
+    <!--        <item>@drawable/ahmad_yani</item>-->
+    <!--        <item>@drawable/bung_tomo</item>-->
+    <!--        <item>@drawable/gatot_subroto</item>-->
+    <!--        <item>@drawable/ki_hadjar_dewantara</item>-->
+    <!--        <item>@drawable/mohammad_hatta</item>-->
+    <!--        <item>@drawable/sudirman</item>-->
+    <!--        <item>@drawable/sukarno</item>-->
+    <!--        <item>@drawable/supomo</item>-->
+    <!--    </integer-array>-->
+
+    <string-array name="data_photo">
+        <item>https://imgpile.com/images/tnK7bu.jpg</item>
+        <item>https://imgpile.com/images/tnKnGw.jpg</item>
+        <item>https://imgpile.com/images/tnKCpE.md.jpg</item>
+        <item>https://imgpile.com/images/tnK1XF.jpg</item>
+        <item>https://imgpile.com/images/tnKIpi.jpg</item>
+        <item>https://imgpile.com/images/tnxyyl.jpg</item>
+    </string-array>
 </resources>
+
+
+

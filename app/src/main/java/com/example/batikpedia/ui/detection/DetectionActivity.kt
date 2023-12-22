@@ -124,7 +124,8 @@ class DetectionActivity : AppCompatActivity() {
                             binding.tvResult.text = result.data.prediction
                             binding.tvAccuracy.text = String.format(
                                 getString(R.string.accuracy),
-                                result.data.confidence
+                                //kalikan data confidence dengan 100 persen
+                                (result.data.confidence as Double * 100).toInt().toString() + "%"
                             )
                             showDetailBatik(result.data.prediction)
                             showLoading(false)

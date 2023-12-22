@@ -16,6 +16,8 @@ class DetailArticleActivity : AppCompatActivity() {
         binding = ActivityDetailArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         val article = intent.getParcelableExtra<ArticleResponseItem>(EXTRA_ARTICLE) as ArticleResponseItem
 
         binding.tvItemTitle.text = article.judul
