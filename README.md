@@ -3,7 +3,7 @@ Repository for bangkit capstone project
 <div id="top"></div>
 
 <p align="center">
-<img src="https://github.com/SP-XD/SP-XD/blob/main/images/dev-working_rounded.gif?raw=true" href="https://github.com/sp-xd" alt="CoDiNg RocKs"  width="550"/><br> 
+<img src="https://github.com/SP-XD/SP-XD/blob/main/images/Developer.gif?raw=true" href="https://github.com/sp-xd" alt="CoDiNg RocKs"  width="550"/><br> 
 </p>
 
 
