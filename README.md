@@ -25,7 +25,7 @@ Repository for bangkit capstone project
 
 1. These are our dependency that we use
   ```sh
-  	dependencies {
+  dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
