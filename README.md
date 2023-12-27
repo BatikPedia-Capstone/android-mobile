@@ -69,11 +69,8 @@ Repository for bangkit capstone project
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 	}
   ```
-  
-  2. Android Architecture
-     ![This is an image](architect.jpeg)
      
-  3. How to use 
+  2. How to use 
      - Clone this repository
      - Checkout 'perubahan-2' branch
      - Open with Android Studio or any IDE for android development
