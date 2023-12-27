@@ -32,7 +32,8 @@ class ArticleAdapter:ListAdapter<ArticleResponseItem, ArticleAdapter.ArticleView
     class ArticleViewHolder (private val binding: ItemArticleBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(article: ArticleResponseItem) {
             binding.tvItemTitle.text = article.judul
-            binding.tvItemIsiArtikel.text = article.namaBatik
+            binding.tvItemIsiArtikel.text = article.isi
+            binding.tvItemTitleBatik.text = article.namaBatik
 
             itemView.setOnClickListener {
                 val intent= Intent(itemView.context, DetailArticleActivity::class.java)

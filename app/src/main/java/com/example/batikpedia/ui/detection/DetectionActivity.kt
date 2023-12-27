@@ -127,7 +127,11 @@ class DetectionActivity : AppCompatActivity() {
                                 //kalikan data confidence dengan 100 persen
                                 (result.data.confidence as Double * 100).toInt().toString() + "%"
                             )
-                            showDetailBatik(result.data.prediction)
+                            if(result.data.prediction=="Batik Batik Pala"){
+                                showDetailBatik("Batik Pala")
+                            }else{
+                                showDetailBatik(result.data.prediction)
+                            }
                             showLoading(false)
                         }
 

@@ -38,6 +38,8 @@
     <string name="google_colab">Google Colab</string>
     <string name="nama_member">Nama member</string>
     <string name="role_member">Machine Learning Path</string>
+    <string name="detection_your_batik">Deteksi Batikmu</string>
+    <string name="info_team">Info</string>
 
 
     <string-array name="data_name">

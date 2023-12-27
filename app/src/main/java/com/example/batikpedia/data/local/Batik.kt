@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "batik")
-data class Batik(
+data class  Batik(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name ="id" )
     var id: Int = 0,

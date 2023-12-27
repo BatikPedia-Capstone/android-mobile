@@ -77,6 +77,9 @@ dependencies {
     //circle image view
     implementation ("de.hdodenhof:circleimageview:3.1.0")
 
+    //lottie
+    implementation ("com.airbnb.android:lottie:6.2.0")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
